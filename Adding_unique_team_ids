@@ -1,0 +1,71 @@
+-- ============================================================
+-- 1. ALTER TABLE: Add team_id column to every table
+-- ============================================================
+ALTER TABLE ARGENTINA    ADD COLUMN team_id INT;
+ALTER TABLE AUSTRALIA     ADD COLUMN team_id INT;
+ALTER TABLE BELGIUM      ADD COLUMN team_id INT;
+ALTER TABLE BRAZIL       ADD COLUMN team_id INT;
+ALTER TABLE CAMAROON     ADD COLUMN team_id INT;
+ALTER TABLE CANADA       ADD COLUMN team_id INT;
+ALTER TABLE COSTA_RICA   ADD COLUMN team_id INT;
+ALTER TABLE CROATIA      ADD COLUMN team_id INT;
+ALTER TABLE DENMARK      ADD COLUMN team_id INT;
+ALTER TABLE ECUADOR      ADD COLUMN team_id INT;
+ALTER TABLE ENGLAND      ADD COLUMN team_id INT;
+ALTER TABLE FRANCE       ADD COLUMN team_id INT;
+ALTER TABLE GERMANY      ADD COLUMN team_id INT;
+ALTER TABLE GHANA        ADD COLUMN team_id INT;
+ALTER TABLE IRAN         ADD COLUMN team_id INT;
+ALTER TABLE JAPAN        ADD COLUMN team_id INT;
+ALTER TABLE MEXICO       ADD COLUMN team_id INT;
+ALTER TABLE MOROCCO      ADD COLUMN team_id INT;
+ALTER TABLE NETHERLANDS  ADD COLUMN team_id INT;
+ALTER TABLE POLAND       ADD COLUMN team_id INT;
+ALTER TABLE PORTUGAL     ADD COLUMN team_id INT;
+ALTER TABLE QATAR        ADD COLUMN team_id INT;
+ALTER TABLE SAUDI_ARABIA ADD COLUMN team_id INT;
+ALTER TABLE SENEGAL      ADD COLUMN team_id INT;
+ALTER TABLE SERBIA       ADD COLUMN team_id INT;
+ALTER TABLE SOUTH_KOREA  ADD COLUMN team_id INT;
+ALTER TABLE SPAIN        ADD COLUMN team_id INT;
+ALTER TABLE SWITZERLAND  ADD COLUMN team_id INT;
+ALTER TABLE TUNISIA      ADD COLUMN team_id INT;
+ALTER TABLE URUGUAY      ADD COLUMN team_id INT;
+ALTER TABLE USA          ADD COLUMN team_id INT;
+ALTER TABLE WALES        ADD COLUMN team_id INT;
+
+-- ============================================================
+-- 2. UPDATE: Set the unique team_id for each table
+-- ============================================================
+UPDATE ARGENTINA    SET team_id = 1;
+UPDATE AUSTRALIA     SET team_id = 2;
+UPDATE BELGIUM      SET team_id = 3;
+UPDATE BRAZIL       SET team_id = 4;
+UPDATE CAMAROON     SET team_id = 5;
+UPDATE CANADA       SET team_id = 6;
+UPDATE COSTA_RICA   SET team_id = 7;
+UPDATE CROATIA      SET team_id = 8;
+UPDATE DENMARK      SET team_id = 9;
+UPDATE ECUADOR      SET team_id = 10;
+UPDATE ENGLAND      SET team_id = 11;
+UPDATE FRANCE       SET team_id = 12;
+UPDATE GERMANY      SET team_id = 13;
+UPDATE GHANA        SET team_id = 14;
+UPDATE IRAN         SET team_id = 15;
+UPDATE JAPAN        SET team_id = 16;
+UPDATE MEXICO       SET team_id = 17;
+UPDATE MOROCCO      SET team_id = 18;
+UPDATE NETHERLANDS  SET team_id = 19;
+UPDATE POLAND       SET team_id = 20;
+UPDATE PORTUGAL     SET team_id = 21;
+UPDATE QATAR        SET team_id = 22;
+UPDATE SAUDI_ARABIA SET team_id = 23;
+UPDATE SENEGAL      SET team_id = 24;
+UPDATE SERBIA       SET team_id = 25;
+UPDATE SOUTH_KOREA  SET team_id = 26;
+UPDATE SPAIN        SET team_id = 27;
+UPDATE SWITZERLAND  SET team_id = 28;
+UPDATE TUNISIA      SET team_id = 29;
+UPDATE URUGUAY      SET team_id = 30;
+UPDATE USA          SET team_id = 31;
+UPDATE WALES        SET team_id = 32;

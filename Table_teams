@@ -1,0 +1,38 @@
+CREATE TABLE teams (
+    team_id SERIAL PRIMARY KEY,
+    team_name VARCHAR(30) UNIQUE NOT NULL
+);
+
+INSERT INTO teams (team_id, team_name) VALUES
+(1,  'ARGENTINA'),
+(2,  'AUSTRALIA'),    
+(3,  'BELGIUM'),
+(4,  'BRAZIL'),
+(5,  'CAMAROON'),
+(6,  'CANADA'),
+(7,  'COSTA_RICA'),
+(8,  'CROATIA'),
+(9,  'DENMARK'),
+(10, 'ECUADOR'),
+(11, 'ENGLAND'),
+(12, 'FRANCE'),
+(13, 'GERMANY'),
+(14, 'GHANA'),
+(15, 'IRAN'),
+(16, 'JAPAN'),
+(17, 'MEXICO'),
+(18, 'MOROCCO'),
+(19, 'NETHERLANDS'),
+(20, 'POLAND'),
+(21, 'PORTUGAL'),
+(22, 'QATAR'),
+(23, 'SAUDI_ARABIA'),
+(24, 'SENEGAL'),
+(25, 'SERBIA'),
+(26, 'SOUTH_KOREA'),
+(27, 'SPAIN'),
+(28, 'SWITZERLAND'),
+(29, 'TUNISIA'),
+(30, 'URUGUAY'),
+(31, 'USA'),
+(32, 'WALES');

@@ -493,8 +493,8 @@ VALUES
 (25, 'Daizen', 'Maeda', '1997-10-20', 1, 0);
 
 
--- KOREA_REPUBLIC
-INSERT INTO KOREA_REPUBLIC (JERSEY_NO, F_NAME, L_NAME, B_DATE, GOALS_SCORED, ASSISTS)
+-- South_Korea
+INSERT INTO SOUTH_KOREA (JERSEY_NO, F_NAME, L_NAME, B_DATE, GOALS_SCORED, ASSISTS)
 VALUES
 (1, 'Kim', 'Seung-gyu', '1990-09-30', 0, 0),
 (12, 'Song', 'Bum-keun', '1997-10-15', 0, 0),
@@ -705,8 +705,7 @@ VALUES
 (17, 'Yeremy', 'Pino', '2002-10-20', 0, 0),
 (21, 'Dani', 'Olmo', '1998-05-07', 1, 1),
 (22, 'Pablo', 'Sarabia', '1992-05-11', 0, 0),
-(25, 'Ansu', 'Fati', '2002-10-31', 0, 0),
-;
+(25, 'Ansu', 'Fati', '2002-10-31', 0, 0);
 
 
 -- SWITZERLAND
@@ -961,8 +960,8 @@ VALUES
 
 
 
--- CAMEROON
-INSERT INTO CAMEROON (JERSEY_NO, F_NAME, L_NAME, B_DATE, GOALS_SCORED, ASSISTS)
+-- CAMAROON
+INSERT INTO CAMAROON (JERSEY_NO, F_NAME, L_NAME, B_DATE, GOALS_SCORED, ASSISTS)
 VALUES
 (1, 'Simon', 'Ngapandouetnbu', '2003-04-12', 0, 0),
 (16, 'Devis', 'Epassy', '1993-02-02', 0, 0),

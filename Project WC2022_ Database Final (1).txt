@@ -1,7 +1,7 @@
-﻿– Database: WORLDCUP_2022
+﻿-- Database: WORLDCUP_2022
 
 
-– Argentina
+-- Argentina
 CREATE TABLE ARGENTINA (
     JERSEY_NO INT NOT NULL,
     F_NAME VARCHAR(20),

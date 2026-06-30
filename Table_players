@@ -1,0 +1,203 @@
+CREATE TABLE players (
+    player_id SERIAL PRIMARY KEY,
+    team_id INT REFERENCES teams(team_id),
+    jersey_no INT NOT NULL,
+    f_name VARCHAR(20),
+    l_name VARCHAR(20),
+    b_date DATE,
+    goals_scored INT DEFAULT 0,
+    assists INT DEFAULT 0,
+    UNIQUE (team_id, jersey_no)
+);
+
+-- ARGENTINA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'ARGENTINA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM ARGENTINA;
+
+-- AUSTRALIA 
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'AUSTRALIA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM AUSTRALIA;
+
+-- BELGIUM
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'BELGIUM'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM BELGIUM;
+
+-- BRAZIL
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'BRAZIL'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM BRAZIL;
+
+-- CAMAROON
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'CAMAROON'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM CAMAROON;
+
+-- CANADA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'CANADA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM CANADA;
+
+-- COSTA_RICA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'COSTA_RICA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM COSTA_RICA;
+
+-- CROATIA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'CROATIA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM CROATIA;
+
+-- DENMARK
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'DENMARK'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM DENMARK;
+
+-- ECUADOR
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'ECUADOR'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM ECUADOR;
+
+-- ENGLAND
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'ENGLAND'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM ENGLAND;
+
+-- FRANCE
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'FRANCE'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM FRANCE;
+
+-- GERMANY
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'GERMANY'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM GERMANY;
+
+-- GHANA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'GHANA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM GHANA;
+
+-- IRAN
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'IRAN'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM IRAN;
+
+-- JAPAN
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'JAPAN'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM JAPAN;
+
+-- MEXICO
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'MEXICO'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM MEXICO;
+
+-- MOROCCO
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'MOROCCO'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM MOROCCO;
+
+-- NETHERLANDS
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'NETHERLANDS'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM NETHERLANDS;
+
+-- POLAND
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'POLAND'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM POLAND;
+
+-- PORTUGAL
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'PORTUGAL'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM PORTUGAL;
+
+-- QATAR
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'QATAR'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM QATAR;
+
+-- SAUDI_ARABIA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SAUDI_ARABIA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SAUDI_ARABIA;
+
+-- SENEGAL
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SENEGAL'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SENEGAL;
+
+-- SERBIA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SERBIA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SERBIA;
+
+-- SOUTH_KOREA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SOUTH_KOREA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SOUTH_KOREA;
+
+-- SPAIN
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SPAIN'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SPAIN;
+
+-- SWITZERLAND
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'SWITZERLAND'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM SWITZERLAND;
+
+-- TUNISIA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'TUNISIA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM TUNISIA;
+
+-- URUGUAY
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'URUGUAY'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM URUGUAY;
+
+-- USA
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'USA'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM USA;
+
+-- WALES
+INSERT INTO players (team_id, jersey_no, f_name, l_name, b_date, goals_scored, assists)
+SELECT (SELECT team_id FROM teams WHERE team_name = 'WALES'),
+       jersey_no, f_name, l_name, b_date, goals_scored, assists
+FROM WALES;
