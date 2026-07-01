@@ -1,0 +1,15 @@
+select 
+    concat(f_name, ' ',  l_name) as Player_name,
+    player_id, 
+    team_name,
+    goals_scored as goals_count
+FROM players as P
+Inner JOIN teams as T
+On P.team_id=T.team_id
+order by  
+    goals_count desc
+Limit 10;
+-- Kylian Mbaape is the topscorer of FIFA WC2022
+
+
+

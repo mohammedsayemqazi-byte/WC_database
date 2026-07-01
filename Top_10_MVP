@@ -1,0 +1,16 @@
+With top_players as (
+select teams.team_id,team_name From teams
+)
+
+Select top_players.*,
+   concat(f_name,'  ',l_name) as player_name,
+    sum(GOALS_SCORED+ASSISTS) as mvp
+FROM 
+    players
+ Inner join 
+        top_players
+ON
+    players.team_id=top_players.team_id
+ group by player_name,top_players.team_id,top_players.team_name
+ order by mvp desc
+ Limit 10;

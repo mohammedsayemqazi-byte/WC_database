@@ -1,0 +1,41 @@
+-- Top 5 teams with oldest average age of players
+SELECT 
+    team_name,
+    count(player_id) as total_players,
+   Round(avg(extract (year from Age(current_date,b_date))),0) as avg_age
+from 
+    players
+INNER JOIN
+    teams
+ON
+    players.team_id = teams.team_id
+GROUP BY
+    team_name
+ORDER BY
+    avg_age DESC
+Limit 5;
+
+
+-- Top 5 teams with youngest average age of players
+SELECT 
+    team_name,
+    count(player_id) as total_players,
+   Round(avg(extract (year from Age(current_date,b_date))),0) as avg_age
+from 
+    players
+INNER JOIN
+    teams
+ON
+    players.team_id = teams.team_id
+GROUP BY
+    team_name
+ORDER BY
+    avg_age ASC
+Limit 5;
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+Select
+    team_name,
+    sum(GOALS_SCORED) as goals_count,
+    sum(assists) as assists_count,
+    sum(goals_scored + assists) as GA_count
+From 
+    players
+Inner Join teams 
+ON players.team_id=teams.team_id
+group by team_name
+order by GA_count desc
+Limit 5;
+
