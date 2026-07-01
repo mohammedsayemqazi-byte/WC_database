@@ -1,0 +1,13 @@
+select 
+    player_id,
+    concat(f_name,' ',l_name) as Player_name,
+    teams.team_name,
+    assists 
+From 
+    players
+Inner join 
+    teams 
+ON players.team_id=teams.team_id
+ORDER BY
+    assists DESC
+Limit 10;

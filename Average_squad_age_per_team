@@ -1,0 +1,15 @@
+select 
+    teams.team_name,
+    Round(avg(EXTRACT(year from age(current_date,b_date))),0) as avg_squad_Age
+From 
+    players
+Inner join 
+    Teams 
+On 
+    players.team_id=teams.team_id
+Group BY 
+    teams.team_name
+ORDER BY 
+     avg_squad_age desc ;
+
+
