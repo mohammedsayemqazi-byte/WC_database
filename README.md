@@ -3,7 +3,7 @@
 ## Project Overview ##
 This project analyzes the World Cup FIFA World Cup 2022 and it’s various insights. This project demonstrates, firstly, how I made the World Cup database and inserted player data from 32 teams into 32 tables, how I  attached unique team_IDs, and player_IDs to create Table_players and Table_teams with team_ID and player_ID as the primary keys.Secodly this project demonstrates (After the database completion) some interesting insights of the FIFA World Cup 2022 such as: 
 
-1.Top 10 goal scorer : [Top_10_Goal_scorer]()
+1.Top 10 goal scorer : [Top_10_Goal_scorer](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Top_10_Goal_scorer)
 
 2.Top 10 MVP : [Top_10_MVP]()
 
