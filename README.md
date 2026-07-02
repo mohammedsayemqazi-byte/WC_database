@@ -5,15 +5,15 @@ This project analyzes the World Cup FIFA World Cup 2022 and it’s various insig
 
 1.Top 10 goal scorer : [Top_10_Goal_scorer](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Top_10_Goal_scorer)
 
-2.Top 10 MVP : [Top_10_MVP]()
+2.Top 10 MVP : [Top_10_MVP](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Top_10_MVP)
 
-3.Top 10 assists : [Top_10_Assist]()
+3.Top 10 assists : [Top_10_Assist](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Top_10_Assist)
 
-4.Top five lethal teams : [Top_5_lethal_teams]()
+4.Top five lethal teams : [Top_5_lethal_teams](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Top_5_lethal_teams)
 
-5.Top five oldest and youngest team  : [top_5_Oldest_and_youngest_teams]()
+5.Top five oldest and youngest team  : [top_5_Oldest_and_youngest_teams](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/top_5_Oldest_and_youngest_teams)
 
-6.The average squad age per team : [Average_squad_age_per_team]()
+6.The average squad age per team : [Average_squad_age_per_team](https://github.com/mohammedsayemqazi-byte/WC_database/blob/main/Average_squad_age_per_team)
 
 
 
